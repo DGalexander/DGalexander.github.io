@@ -32,7 +32,7 @@ navbar-links:
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/DA.jpg"
 
 # --- Footer options --- #
 
@@ -43,7 +43,7 @@ author:
   email: "dga.1984@gmail.com.com"
   github: DGalxander
   twitter: @DGAlexander84   # eg. daattali
-  linkedin: in/david-alexander-5a41015a?trk=nav_responsive_tab_profile  # eg. "pub/dean-attali/8/946/143"
+  linkedin: in/david-alexander-5a41015a # eg. "pub/dean-attali/8/946/143"
  
 # Select which links to show in the footer
 footer-links-active:
