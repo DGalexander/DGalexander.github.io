@@ -135,7 +135,7 @@ prose:
           element: "text"
           label: "Date"
           help: "Enter date of post."
-          placeholder: "YYYY-MM-DD HH:MM:SS"
+          placeholder: "YYYY-MM-DD HH:MM:SS +/-TTTT"
           alterable: true
       - name: "published"
         field:
