@@ -12,10 +12,8 @@ published: true
 * B.Sc (2006), Geography [University of Liverpool](https://www.liverpool.ac.uk/study/undergraduate/courses/geography-bsc-hons/overview/)
 
 ### Knowledge
-
-I've developed an understanding of contempary social science alongside natural sciences. 
+Throughout my career I've developed a keen understanding of contempary social science alongside natural science 
 
 ### Hobbies 
-
-I'm addicted to marathon running, mountain biking, travelling wasting hours of my life on projects on my computer :)  
+I'm addicted to marathon running, mountain biking, travelling and wasting hours of my life on projects on my computer :)  
 
