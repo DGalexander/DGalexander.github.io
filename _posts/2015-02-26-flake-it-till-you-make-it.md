@@ -4,7 +4,7 @@ title: My first post
 subtitle: My first test
 bigimg: /img/path.jpg
 published: true
-date: ""
+date: "2016-04-09 14:12:00"
 ---
 
 
