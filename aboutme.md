@@ -13,5 +13,9 @@ published: true
 
 ### Knowledge
 
-### Hobbies: Marathon running, mountainbiking 
+I've developed an understanding of contempary social science alongside natural sciences. 
+
+### Hobbies 
+
+I'm addicted to marathon running, mountain biking, travelling wasting hours of my life on projects on my computer :)  
 
