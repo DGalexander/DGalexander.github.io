@@ -23,12 +23,9 @@ description: A virtual proof that name is awesome!
 
 # List of links in the navigation bar
 navbar-links:
+  Home: ""
+  Projects: "Projects"
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Projects: "http://dgalexander.github.io/Projects"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -43,7 +40,7 @@ author:
   email: "dga.1984@gmail.com.com"
   github: DGalexander
   twitter: DGAlexander84
-  linkedin: in/david-alexander-5a41015a # eg. "pub/dean-attali/8/946/143"
+  linkedin: "uk.linkedin.com/in/david-alexander-5a41015a" # eg. "pub/dean-attali/8/946/143"
  
 # Select which links to show in the footer
 footer-links-active:
@@ -52,7 +49,7 @@ footer-links-active:
   email: true
   twitter: true
   github: true
-  linkedin: false
+  linkedin: true
   stackoverflow: false
 
 # How to display the link to the website in the footer
