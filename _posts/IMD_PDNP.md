@@ -1,9 +1,9 @@
 ---
 layout: post
 published: true
-title: Untitled
+title: 'Mapping IMD Data with Leaflet for R '
 date: '2016-07-16 06:18:00 +0800'
-subtitle: Mapping IMD Data Leaflet R (Peak District)
+subtitle: IMD analysis of the Peak District
 ---
 # Introduction
 
