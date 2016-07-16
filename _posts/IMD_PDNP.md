@@ -138,17 +138,14 @@ knitr::kable(AverageRank)
 
 # Map the 2015 Data
 
-
-
+## Load the packages
 
 {% highlight r %}
 library(leaflet)
 library(rgdal)
 {% endhighlight %}
 
-
-
-
+## We could just add the .GEOjson as a layer but we need to convert to a spatial class to do the analysis
 
 {% highlight r %}
 ## Convert the data to SP class
@@ -157,40 +154,34 @@ downloader::download(url = url, destfile = "/tmp/LSOA.GeoJSON")
 LSOA <- readOGR(dsn = "/tmp/LSOA.GeoJSON", layer = "OGRGeoJSON")
 {% endhighlight %}
 
-
+## Subset the .GEOjson file with the LSOA codes for the Peak District
 
 {% highlight r %}
 PDNP_LSOA <- subset(LSOA, LSOA$LSOA11CD %in% LSOA_PDNP)
 {% endhighlight %}
 
-
+## Merge the spatial layer with the data frame to display the spatial layer
 
 {% highlight r %}
 ## Merge data frame with spatial polygons layer
 IMD_PDNP_LSOA <- sp::merge(PDNP_LSOA, IMD15, by.x="LSOA11CD", by.y="LSOA code (2011)")
 {% endhighlight %}
 
-
-
+## Set the column data to numeric to be used for analysis
 
 {% highlight r %}
 ## Set the data to numeric
 IMD_PDNP_LSOA$'IMD Decile' <- as.numeric(IMD_PDNP_LSOA$'IMD Decile')
 {% endhighlight %}
 
-
-
-
+## Set the colour bin for the thematic choropleth map
 
 {% highlight r %}
 ## Create the color bin
 pal <- colorBin("YlOrRd", domain = IMD_PDNP_LSOA$'IMD Decile', n=
 {% endhighlight %}
 
-
-
-
-
+## Create a label popup when the polygon is selected
 
 {% highlight r %}
 ## Create a Popup
@@ -204,8 +195,7 @@ LSOA_popup <- paste0("<strong>LSOA: </strong>",
                      IMD_PDNP_LSOA$'IMD Decile')
 {% endhighlight %}
 
-
-
+## Map the data
 
 {% highlight r %}
 ## Map the data
@@ -218,3 +208,10 @@ leaflet(IMD_PDNP_LSOA) %>%
               opacity = 1)
 {% endhighlight %}
 
+<p> 
+<iframe frameborder="0" width="700" height="500" 
+        sandbox="allow-same-origin allow-scripts"
+        scrolling="no" seamless="seamless"
+        src="/files/R/IMD_MAP.html">
+</iframe>
+</p> 
