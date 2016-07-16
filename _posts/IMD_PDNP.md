@@ -142,7 +142,8 @@ knitr::kable(AverageRank)
 
 
 {% highlight r %}
-
+library(leaflet)
+library(rgdal)
 {% endhighlight %}
 
 
@@ -150,7 +151,31 @@ knitr::kable(AverageRank)
 
 
 {% highlight r %}
+## Convert the data to SP class
+url <- "http://opengeography.ons.opendata.arcgis.com/datasets/cfe467b5bc804694a72428fe08b3ace2_0.geojson"
+downloader::download(url = url, destfile = "/tmp/LSOA.GeoJSON")
+LSOA <- readOGR(dsn = "/tmp/LSOA.GeoJSON", layer = "OGRGeoJSON")
+{% endhighlight %}
 
+
+
+{% highlight r %}
+PDNP_LSOA <- subset(LSOA, LSOA$LSOA11CD %in% LSOA_PDNP)
+{% endhighlight %}
+
+
+
+{% highlight r %}
+## Merge data frame with spatial polygons layer
+IMD_PDNP_LSOA <- sp::merge(PDNP_LSOA, IMD15, by.x="LSOA11CD", by.y="LSOA code (2011)")
+{% endhighlight %}
+
+
+
+
+{% highlight r %}
+## Set the data to numeric
+IMD_PDNP_LSOA$'IMD Decile' <- as.numeric(IMD_PDNP_LSOA$'IMD Decile')
 {% endhighlight %}
 
 
@@ -158,6 +183,38 @@ knitr::kable(AverageRank)
 
 
 {% highlight r %}
+## Create the color bin
+pal <- colorBin("YlOrRd", domain = IMD_PDNP_LSOA$'IMD Decile', n=
+{% endhighlight %}
 
+
+
+
+
+
+{% highlight r %}
+## Create a Popup
+LSOA_popup <- paste0("<strong>LSOA: </strong>",
+                     IMD_PDNP_LSOA$'LSOA name',
+                     "<br><strong>IMD Score: </strong>",
+                     IMD_PDNP_LSOA$'IMD Score',
+                     "<br><strong>IMD Rank (where 1 is most deprived): </strong>",
+                     IMD_PDNP_LSOA$'IMD Rank (where 1 is most deprived)',
+                     "<br><strong>IMD Decile (% Most Deprived): </strong>",
+                     IMD_PDNP_LSOA$'IMD Decile')
+{% endhighlight %}
+
+
+
+
+{% highlight r %}
+## Map the data
+leaflet(IMD_PDNP_LSOA) %>%
+    setView(lng = -1.7, lat = 53.33, zoom = 9) %>% addTiles() %>%
+    addPolygons(stroke = FALSE, fillOpacity = 0.7, smoothFactor = 0.5, 
+                fillColor = ~pal(IMD_PDNP_LSOA$'IMD Decile'), popup = LSOA_popup) %>%
+    addLegend("bottomright", pal = pal, values = ~'IMD Decile',
+               title = "Decile (10=Least Deprived)",
+              opacity = 1)
 {% endhighlight %}
 
