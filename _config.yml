@@ -25,7 +25,6 @@ description: David's personal web page
 # List of links in the navigation bar
 navbar-links:
   Home: ""
-  Projects: "projects"
   About Me: "aboutme"
 
 # Image to show in the navigation bar - image must be a square (width = height)
