@@ -1,11 +1,11 @@
 ---
 layout: post
 subtitle: 'Analysis of twitteR ''#peakdistrict'''
-date: '2016-07-18 14:18:00 +0800'
+date: '2016-04-16 14:18:00 +0800'
 published: true
 title: Quantifying visitor sentiment for a National Park
 ---
-## Why access twitter?
+## Why access twitter? 
 
 Current **customer relationship management (CRM)** systems create customer profiles based on demographics, past buying patterns and other interactions or actions. Monitoring and quantifying interactions of customers with large areas of landscape such as National Parks with regular comprehensive visitor surveying is costly and prohibitively expensive. 
 
