@@ -12,10 +12,11 @@ This summer I have finally gotten round to building a raspberry pi bird box. It 
 
 The best place to situate my Nestbox will be on a North facing wall out of direct sunlight. There is a small overhang of guttering which should shelter the box and the raspberry pi. The height is about 1.5 meters, hopefully this will attract Blue, Great or Coal Tits. 
 
-----------
-Equipment
----------
+
+## Equipment
+
 <img src="/img/Birdbox_schem.png" alt="a screencap of my twine story" align="left" style="PADDING-RIGHT: 2px"/>
+
  - Raspberry Pi Model A+
  - USB Wifi Adapter for the Raspberry Pi
  - Raspberry Pi NOIR camera module
@@ -24,9 +25,9 @@ Equipment
  - Bird box [Gardman](http://www.diy.com/departments/gardman-brown-nest-box/189469_BQ.prd)
 
 
-----------
-Method
-------
+
+## Method
+
 
  1. Set up the Camera Board
  2. Wire up the Infra Red LED
@@ -36,11 +37,6 @@ Method
  6. Create an SSH Connection using [Screen](https://en.wikipedia.org/wiki/GNU_Screen) 
  6. Edit the `rc.local`script to run the Screen every time the Pi boots
 
-----------
 
-Results
--------
+# Results
 
-![Bird Box Schematic](https://www.dropbox.com/s/syf9gh6extuu46f/Birdbox_schem.png)
-
-bhbh
