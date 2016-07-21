@@ -3,8 +3,6 @@ layout: post
 published: false
 title: Untitled
 ---
-
-
 **Raspberry Pi Infrared Bird box**
 ========================
 
