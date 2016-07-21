@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: INFRARED BIRD BOX
+title: Infrared Bird Box
 subtitle: Raspberry pi birdbox - stream video feed to the internet
 date: '2016-07-21 02:18:00 +0800'
 ---
