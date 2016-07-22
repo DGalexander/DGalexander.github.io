@@ -40,4 +40,4 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
 
 <img src="/img/IMG_3119.png" alt="BirdBox" align="left" style="PADDING-RIGHT: 2px"/>
 
-<img src="/img/IMG_3223.png" alt="BirdBox Installed" align="left" style="PADDING-RIGHT: 2px"/>
+<img src="/img/IMG_3223.png" alt="BirdBox Installed" align="right" style="PADDING-RIGHT: 2px"/>
