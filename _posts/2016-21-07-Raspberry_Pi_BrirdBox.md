@@ -33,7 +33,7 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
  4. Compile ffmpeg and stream to the internet
  5. Create a script with a `while` loop to constantly send out video
  6. Create an SSH Connection using [Screen](https://en.wikipedia.org/wiki/GNU_Screen) 
- 6. Edit the `rc.local`script to run the Screen every time the Pi boots
+ 6. Edit the `rc.local` script to run the Screen every time the Pi boots
 
 <img src="/img/IMG_3119.png" alt="BirdBox" align="left" style="PADDING-RIGHT: 0px"/>
 
