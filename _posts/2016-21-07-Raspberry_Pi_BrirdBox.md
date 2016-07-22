@@ -22,7 +22,7 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
  - 5mm Infrared IR LED Light Emitting Diode
  - Bird box [Gardman](http://www.diy.com/departments/gardman-brown-nest-box/189469_BQ.prd)
 
-<img src="/img/Birdbox_schem.png" alt="a screencap of my twine story" align="left" style="PADDING-RIGHT: 2px"/>
+<img src="/img/Birdbox_schem.png" alt="BirdBox Schematic" align="left" style="PADDING-RIGHT: 2px"/>
 
 ## Method
 
@@ -37,3 +37,6 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
 
 
 # Results
+
+<img src="/img/IMG_3119.png" alt="BirdBox" align="left" style="PADDING-RIGHT: 2px"/>
+<img src="/img/IMG_3223.png" alt="BirdBox Installed" align="left" style="PADDING-RIGHT: 2px"/>
