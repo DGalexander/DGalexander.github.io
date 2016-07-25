@@ -52,7 +52,7 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
 <body>
   <div id="slideShowImages">
     <img src="/img/Birdbox_schem.png" alt="Slide 1" />
-    <img src="/img/IMG_3119.png" alt="Slide 2" />
+    <img src="/img/Birdbox_schem.png" alt="Slide 2" />
     <img src="/img/IMG_3223.png" alt="Slide 3" />    
     </div>  
   <button id="slideShowButton"></button> <!-- Optional button element. -->
