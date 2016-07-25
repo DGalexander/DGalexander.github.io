@@ -40,3 +40,23 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
 # Results
 
 <img src="/img/IMG_3223.png" alt="BirdBox Installed" align="left" style="PADDING-RIGHT: 0px"/>
+
+<html>
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge"> <!-- For intranet testing only, remove in production. -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <title>Slide Show</title>
+</head>
+
+<body>
+  <div id="slideShowImages">
+    <img src="/img/Birdbox_schem.png" alt="Slide 1" />
+    <img src="/img/IMG_3119.png" alt="Slide 2" />
+    <img src="/img/IMG_3223.png" alt="Slide 3" />    
+    </div>  
+  <button id="slideShowButton"></button> <!-- Optional button element. -->
+  <script src="slideShow.js"></script>
+</body>
+
+</html>
