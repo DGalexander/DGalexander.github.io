@@ -35,11 +35,8 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
  6. Create an SSH Connection using [Screen](https://en.wikipedia.org/wiki/GNU_Screen) 
  6. Edit the `rc.local` script to run the Screen every time the Pi boots
 
-<img src="/img/IMG_3119.png" alt="BirdBox" align="left" style="PADDING-RIGHT: 0px"/>
 
 # Results
-
-<img src="/img/IMG_3223.png" alt="BirdBox Installed" align="left" style="PADDING-RIGHT: 0px"/>
 
 <html>
 
