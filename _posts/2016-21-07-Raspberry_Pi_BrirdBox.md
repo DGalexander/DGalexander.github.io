@@ -23,7 +23,7 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
  - Bird box [Gardman](http://www.diy.com/departments/gardman-brown-nest-box/189469_BQ.prd)
 
 <img src="/img/Birdbox_schem.png" alt="BirdBox Schematic" align="left" style="PADDING-RIGHT: 2px"/>
-<img src="/img/IMG_3233(1).jpg" alt="BirdBox Schematic" align="left" style="PADDING-RIGHT: 2px"/>
+<img src="/img/IMG_3233(1).jpg" alt="BirdBox Schematic" align="right" style="PADDING-RIGHT: 2px"/>
 <img src="/img/IMG_3119(1).jpg" alt="BirdBox Schematic" align="left" style="PADDING-RIGHT: 2px"/>
 
 ## Method
