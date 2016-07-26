@@ -8,9 +8,9 @@ date: '2016-07-21 02:18:00 +0800'
 **Raspberry Pi Infrared Bird box**
 ========================
 
-This summer I have finally gotten round to building a raspberry pi bird box. It is based on this guide by [Raspberry Pi Foundation](https://www.raspberrypi.org/learning/infrared-bird-box/). Although it is late in the year for any nesting this year, Nestboxes are best put up during the autumn. Many birds will enter nestboxes during the autumn and winter, looking for a suitable place to roost or perhaps to feed. 
+After having an old raspberry pi laying around since 2013, I finally decided to do something with it! After searching online for a neat little project I decided to create a pi bird box. This project is based on this guide by [Raspberry Pi Foundation](https://www.raspberrypi.org/learning/infrared-bird-box/). Although it is late in the year for any nesting birds, nestboxes are best put up early during the autumn. Many birds will enter nestboxes during the autumn and winter, looking for a suitable place to roost or perhaps to feed. 
 
-The best place to situate my Nestbox will be on a North facing wall out of direct sunlight. There is a small overhang of guttering which should shelter the box and the raspberry pi. The height is about 1.5 meters, hopefully this will attract Blue, Great or Coal Tits. 
+The best place to situate my Nestbox will be on a North facing wall out of direct sunlight. However, to an inconvenient washing line, I will have to situate my nestbox somewhere less appropriate than a North facing wall but it is still out of direct sunlight at least. The height is about 1.5 meters, hopefully this will attract Blue, Great or Coal Tits. 
 
 
 ## Equipment
@@ -37,4 +37,3 @@ The best place to situate my Nestbox will be on a North facing wall out of direc
 
 
 # Results
-
