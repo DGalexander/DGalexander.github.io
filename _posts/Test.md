@@ -17,6 +17,14 @@ subtitle: Route 360
 </iframe>
 </p>
 
+<p> 
+<iframe frameborder="0" width="700" height="500" 
+        sandbox="allow-same-origin allow-scripts"
+        scrolling="no" seamless="seamless"
+        src="https://github.com/DGalexander/Route360_Peak-Visitor-Centre/blob/master/PVC.js">
+</iframe>
+</p>
+
 <script src="https://github.com/DGalexander/Route360_Peak-Visitor-Centre/blob/master/PVC.js" type="text/javascript"></script><link rel="https://github.com/DGalexander/Route360_Peak-Visitor-Centre/blob/master/PVC.css"></link>
 
 <div id="basic_dag"></div>
