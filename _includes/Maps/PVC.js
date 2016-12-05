@@ -1,6 +1,7 @@
 var latlon = [53.343557, -1.778];
 var map = L.map('map').setView(latlon, 13);
-document.getElementById('basic_dag');
+document.getElementById('basic_dag'),
+  {
 /* to change the location of the map change the lat and long, here 40.717192,-74.012042.
 To change the default zoom level change 17 to another number. 0 is entire world twice over and 18 is the closest you can get
 */
@@ -135,3 +136,4 @@ function showPolygons() {
     polygonLayer.clearAndAddLayers(polygons, true);
   });
 };
+}
