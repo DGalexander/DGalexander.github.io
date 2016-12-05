@@ -19,6 +19,8 @@ subtitle: Route 360
 
 <script src="https://github.com/DGalexander/Route360_Peak-Visitor-Centre/blob/master/PVC.js" type="text/javascript"></script><link rel="https://github.com/DGalexander/Route360_Peak-Visitor-Centre/blob/master/PVC.css"></link>
 
+<div id="PVC"></div>
+
 <!-- jsHeader -->
 <script type="text/javascript">
 
