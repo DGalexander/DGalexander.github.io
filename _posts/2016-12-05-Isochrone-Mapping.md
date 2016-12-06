@@ -16,8 +16,8 @@ As yet, only [Route 360](https://www.route360.net/index.html) only accepts point
 
 Below, I have adapated a simple polygon map to with travel time and travel type options using Castleton Visitor Centre as an example. I have embeded my [CodePen](http://codepen.io/) and [Gist](https://gist.github.com/). 
 
-<p data-height="471" data-theme-id="dark" data-slug-hash="pNLJGr" data-default-tab="result" data-user="DGAlexander" data-embed-version="2" data-pen-title="Peak Gateway" class="codepen">See the Pen <a href="http://codepen.io/DGAlexander/pen/pNLJGr/">Peak Gateway</a> by David  Alexander (<a href="http://codepen.io/DGAlexander">@DGAlexander</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+<iframe height='471' scrolling='no' title='Peak Gateway' src='//codepen.io/DGAlexander/embed/pNLJGr/?height=471&theme-id=dark&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/DGAlexander/pen/pNLJGr/'>Peak Gateway</a> by David  Alexander (<a href='http://codepen.io/DGAlexander'>@DGAlexander</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
 
 test
 
