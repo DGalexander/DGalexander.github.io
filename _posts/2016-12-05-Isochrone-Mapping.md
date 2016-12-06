@@ -19,4 +19,4 @@ Below, I have adapated a simple polygon map to with travel time and travel type 
 <iframe height='471' scrolling='no' title='Peak Gateway' src='//codepen.io/DGAlexander/embed/pNLJGr/?height=471&theme-id=dark&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/DGAlexander/pen/pNLJGr/'>Peak Gateway</a> by David  Alexander (<a href='http://codepen.io/DGAlexander'>@DGAlexander</a>) on <a href='http://codepen.io'>CodePen</a>.
 </iframe>
 
-<script src="https://bl.ocks.org/DGalexander/6657db41eb3d68c333ad4ebc4007748b"></script>
+<script src="https://gist.github.com/DGalexander/6657db41eb3d68c333ad4ebc4007748b.js"></script>
