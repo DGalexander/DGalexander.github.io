@@ -1,9 +1,9 @@
 ---
 layout: post
 published: true
-title: Isochrones Webmaps Using Leaflet
+title: Isochrone Webmaps
 date: '2016-12-05 02:12:00 +0800'
-subtitle: Route 360
+subtitle: Isochrones -  using Java Script and Leaflet
 ---
 **Creating an Isochrone Map Using Java Script Route360**
 ========================
