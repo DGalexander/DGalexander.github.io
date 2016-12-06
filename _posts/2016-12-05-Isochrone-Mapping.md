@@ -22,3 +22,4 @@ Below, I have adapated a simple polygon map to with travel time and travel type 
 test
 
 <script src="https://bl.ocks.org/DGalexander/6657db41eb3d68c333ad4ebc4007748b"></script>
+<script src="https://gist.github.com/DGalexander/6657db41eb3d68c333ad4ebc4007748b.js"></script>
