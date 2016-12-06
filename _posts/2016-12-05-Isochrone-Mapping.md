@@ -9,9 +9,6 @@ subtitle: Route 360
 ========================
 
 
-<iframe height='402' scrolling='no' title='Peak Gateway' src='//codepen.io/DGAlexander/embed/pNLJGr/?height=402&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/DGAlexander/pen/pNLJGr/'>Peak Gateway</a> by David  Alexander (<a href='http://codepen.io/DGAlexander'>@DGAlexander</a>) on <a href='http://codepen.io'>CodePen</a>.
-
-
 <p data-height="402" data-theme-id="0" data-slug-hash="pNLJGr" data-default-tab="result" data-user="DGAlexander" data-embed-version="2" data-pen-title="Peak Gateway" class="codepen">See the Pen <a href="http://codepen.io/DGAlexander/pen/pNLJGr/">Peak Gateway</a> by David  Alexander (<a href="http://codepen.io/DGAlexander">@DGAlexander</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
