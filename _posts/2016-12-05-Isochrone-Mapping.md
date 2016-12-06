@@ -14,4 +14,4 @@ subtitle: Route 360
 <script src="https://gist.github.com/DGalexander/6657db41eb3d68c333ad4ebc4007748b.js"></script>
 
 
-https://bl.ocks.org/DGalexander/6657db41eb3d68c333ad4ebc4007748b
+<script src="https://bl.ocks.org/DGalexander/6657db41eb3d68c333ad4ebc4007748b"></script>
