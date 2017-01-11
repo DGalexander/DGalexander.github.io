@@ -15,7 +15,7 @@ As yet, only [Route 360](https://www.route360.net/index.html) only accepts point
 Motion Intelligence helps business and public organizations harvest the power of advanced spatial analysis. This can be useful in Spatial Planning and business planning. Below, I have adapated a simple polygon map to with travel time and travel type options using Bakewell Visitor Centre as an example.
 
 <p> 
-<iframe frameborder="0" width="700" height="500" 
+<iframe frameborder="0" width="800" height="800" 
         sandbox="allow-same-origin allow-scripts"
         scrolling="no" seamless="seamless"
         src="/files/2017-01-11-ISO_MAP.html">
