@@ -253,8 +253,8 @@ table(Decile)
 {% endhighlight %}
 
 > Decile
-  1   2   3   4   5   6   7   8   9  10 
-538 470 444 392 364 318 321 370 414 422
+> 1   2   3   4   5   6   7   8   9  10
+> 538 470 444 392 364 318 321 370 414 422
 
 Employment Rate
 
@@ -273,21 +273,21 @@ quantileCuts(EmpRate, 5)
 {% endhighlight %}
 
 > 20%  40%  60%  80% 
-0.04 0.08 0.13 0.19
+> 0.04 0.08 0.13 0.19
 
 {% highlight r %}
 rangeCuts(EmpRate, 5)
 {% endhighlight %}
 
 > #1    #2    #3    #4 
-0.104 0.208 0.312 0.416
+> 0.104 0.208 0.312 0.416
 
 {% highlight r %}
 sdCuts(EmpRate, 5)
 {% endhighlight %}
 
 > -1.5SD      -0.5SD       0.5SD       1.5SD 
--0.01024241  0.07671088  0.16366416  0.25061744
+> -0.01024241  0.07671088  0.16366416  0.25061744
 
 {% highlight r %}
 # Plot perameters 
@@ -332,16 +332,3 @@ title("Quantile Cuts", cex.main = 1)
 {% endhighlight %}
 
 ![7.png]({{site.baseurl}}/img/7.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
