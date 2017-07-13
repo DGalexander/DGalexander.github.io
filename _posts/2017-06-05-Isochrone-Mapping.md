@@ -42,14 +42,14 @@ First we set up the R Environment and load the initial packages. Then the redefi
 
 {% highlight r %}
 ## Set wd
-setwd("~/Desktop/CALLANDER/R")
+setwd("~/CALLANDER/R")
 ## Load Packages
 library("GISTools")
 {% endhighlight %}
 
 {% highlight r %}
 ## Load CLP Layer .shp
-CLP <- readShapePoly("~/Desktop/CALLANDER/Boundary/CLP/20170127_CLP_Boundary_Version_2.shp")
+CLP <- readShapePoly("~/CALLANDER/Boundary/CLP/20170127_CLP_Boundary_Version_2.shp")
 
 ## Create a 1km Buffer
 CLP.buffer <- gBuffer(CLP, width = 1000)
@@ -70,7 +70,7 @@ Clip the A roads to the CLP Buffer so we can analyse the intersection points. He
 
 {% highlight r %}
 ## Load OS GB Roads Data (NN = 100km)
-roads <- readShapeLines("~/Desktop/CALLANDER/Boundary/OSOpenRoadsGB/data/NN_RoadLink.shp")
+roads <- readShapeLines("~/CALLANDER/Boundary/OSOpenRoadsGB/data/NN_RoadLink.shp")
 ## Logical = A Roads
 roads.ARoads <- (roads$class == "A Road")
 ## Subset the SLDF A roads
@@ -195,7 +195,7 @@ It is important to note that the SIMD identifies deprived areas not people.
 
 {% highlight r %}
 # Add SNS Data Zones
-SNS <- readShapePoly("~/Desktop/CALLANDER/Boundary/SG_SIMD_2016/SG_SIMD_2016.shp", proj4string = CRS(proj4string))
+SNS <- readShapePoly("~/CALLANDER/Boundary/SG_SIMD_2016/SG_SIMD_2016.shp", proj4string = CRS(proj4string))
 {% endhighlight %}
 
 We then do a spatial query or intersection of the data zones to the catchment boundary.
