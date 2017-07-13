@@ -14,14 +14,6 @@ As yet, only [Route 360](https://www.route360.net/index.html) only accepts point
 
 Motion Intelligence helps business and public organizations harvest the power of advanced spatial analysis. This can be useful in Spatial Planning and business planning. Below, I have adapated a simple bash query around using R as a GIS to show travel time to a Landscape Partnerhip area in Scotland. 
 
-<p> 
-<iframe frameborder="0" width="700" height="800" 
-        sandbox="allow-same-origin allow-scripts"
-        scrolling="no" seamless="seamless"
-        src="/files/2017-01-11-ISO_MAP.html">
-</iframe>
-</p>
-
 ### Introduction
 
 Catchment definition is an important part of site location and marketing decision-making and allows
@@ -97,6 +89,8 @@ plot(CLP, add = T, border = "blue")
 plot(CLP.Aroads, add = T, border = "red")
 {% endhighlight %}
 
+![2.png]({{site.baseurl}}/img/2.png)
+
 ## Creating Access Points
 
 Where the A roads intersect the CLP we will use these as theoretical access points to the CLP area. As mentioned above, this is the logical transport routing for 'non-immediate locals' who we would expect to follow this network. 
@@ -121,6 +115,7 @@ plot(CLP.Aroads, add = T, border = "red")
 plot(xPoints, add = TRUE, col = "red", pch = 20, cex = 3)
 {% endhighlight %}
 
+![3.png]({{site.baseurl}}/img/3.png)
 
 Now we convert these access points from X Y location to Latitude and Longitude; the format used to query Route360 API engine. 
 
@@ -162,6 +157,8 @@ plot(Catchment)
 plot(CLP, add = T, col = "green")
 {% endhighlight %}
 
+![4.png]({{site.baseurl}}/img/4.png)
+
 SNS Data Zones, were developed to monitor and develop policy at small area level. Scotland is split in to 6,976 SNS data zones, which have roughly equal population but vary in size. There are 38 indicators to measure the different sides of deprivation in each data zone, like pupil performance, travel times to the GP, crime, unemployment and many others. Focusing on small areas shows the
 different issues there are in each neighborhood. These could be poor housing conditions, a lack of skills or good education, or poor public transport.
 
@@ -178,7 +175,7 @@ We then do a spatial query or intersection of the data zones to the catchment bo
 # Subset SNS layer intersects Catchment
 SNS.Catch <- gIntersection(Catchment, SNS, byid = TRUE)
 
-# Replcae the concatenation of Catchment
+# Replace the concatenation of Catchment
 row.names(SNS.Catch) <- gsub("buffer ","", row.names(SNS.Catch))
 {% endhighlight %}
 
@@ -228,8 +225,9 @@ Employment Rate
 hist(EmpRate, breaks = 20)
 {% endhighlight %}
 
-Let's test some mapping!
+![5.png]({{site.baseurl}}/img/5.png)
 
+Let's test some mapping!
 
 {% highlight r %}
 # Set some cuts
@@ -265,22 +263,20 @@ par(mfrow = c(1,1))
 shades <- auto.shading(Rank, cutter = rangeCuts, n = 5, cols = brewer.pal(5, "RdYlGn"))
 choropleth(SNS,Rank, shading = shades)
 title("Quantile Cuts", cex.main = 1)
+
+par(mfrow = c(1,1))
 {% endhighlight %}
 
+![6.png]({{site.baseurl}}/img/6.png)
 
+{% highlight r %}
+# Quantile Cuts
+shades <- auto.shading(Rank, cutter = rangeCuts, n = 5, cols = brewer.pal(5, "RdYlGn"))
+choropleth(SNS,Rank, shading = shades)
+title("Quantile Cuts", cex.main = 1)
+{% endhighlight %}
 
-
-
-
-
-
-
-
-
-
-
-
-
+![7.png]({{site.baseurl}}/img/7.png)
 
 
 
