@@ -250,6 +250,55 @@ A (very!) quick look at the Deciles suggests that there is an even spread of dep
 table(Decile)
 {% endhighlight %}
 
+Decile
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">Decile</th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+    <th class="tg-yw4l"></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">1</td>
+    <td class="tg-yw4l">2</td>
+    <td class="tg-yw4l">3</td>
+    <td class="tg-yw4l">4</td>
+    <td class="tg-yw4l">5</td>
+    <td class="tg-yw4l">6</td>
+    <td class="tg-yw4l">7</td>
+    <td class="tg-yw4l">8</td>
+    <td class="tg-yw4l">9</td>
+    <td class="tg-yw4l">10</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">538</td>
+    <td class="tg-yw4l">470</td>
+    <td class="tg-yw4l">444</td>
+    <td class="tg-yw4l">392</td>
+    <td class="tg-yw4l">364</td>
+    <td class="tg-yw4l">318</td>
+    <td class="tg-yw4l">321</td>
+    <td class="tg-yw4l">370</td>
+    <td class="tg-yw4l">414</td>
+    <td class="tg-yw4l">422</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
 
 Employment Rate
 
@@ -265,9 +314,82 @@ Let's test some mapping!
 {% highlight r %}
 # Set some cuts
 quantileCuts(EmpRate, 5)
-rangeCuts(EmpRate, 5)
-sdCuts(EmpRate, 5)
+{% endhighlight %}
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">20%</th>
+    <th class="tg-yw4l">40%</th>
+    <th class="tg-yw4l">60%</th>
+    <th class="tg-yw4l">80%</th>
+    <th class="tg-yw4l"></th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">0.04</td>
+    <td class="tg-yw4l">0.08</td>
+    <td class="tg-yw4l">0.13</td>
+    <td class="tg-yw4l">0.19</td>
+    <td class="tg-yw4l"></td>
+  </tr>
+</table>
+
+{% highlight r %}
+rangeCuts(EmpRate, 5)
+{% endhighlight %}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">#1</th>
+    <th class="tg-yw4l">#2</th>
+    <th class="tg-yw4l">#3</th>
+    <th class="tg-yw4l">#4</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">0.104</td>
+    <td class="tg-yw4l">0.208</td>
+    <td class="tg-yw4l">0.312</td>
+    <td class="tg-yw4l">0.416</td>
+  </tr>
+</table>
+
+{% highlight r %}
+sdCuts(EmpRate, 5)
+{% endhighlight %}
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">-1.5SD</th>
+    <th class="tg-yw4l">-0.5SD</th>
+    <th class="tg-yw4l">0.5SD</th>
+    <th class="tg-yw4l">1.5SD</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">-0.01024241</td>
+    <td class="tg-yw4l">0.07671088</td>
+    <td class="tg-yw4l">0.16366416</td>
+    <td class="tg-yw4l">0.25061744</td>
+  </tr>
+</table>
+
+{% highlight r %}
 # Plot perameters 
 par(mar = c(0.25, 0.25, 2, 0.25))
 par(mfrow = c(1, 3))
