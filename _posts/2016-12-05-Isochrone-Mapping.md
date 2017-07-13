@@ -70,6 +70,8 @@ plot(CLP.buffer)
 plot(CLP, add = T, border = "blue")
 {% endhighlight %}
 
+![1.png]({{site.baseurl}}/img/1.png)
+
 Load the OS GB Roads data and clip the CLA Area. This was downloaded from the Ordnance Survey website and is  is subject to the terms at http://os.uk/opendata/licence Contains Ordnance Survey data Â© Crown copyright and database right (2016). 
 
 Clip the A roads to the CLP Buffer so we can analyse the intersection points. Here we use A roads as they are the major arterial roads in the area. It is unlikely, a visitor would access the CLP area, by car on any other type of road. 
