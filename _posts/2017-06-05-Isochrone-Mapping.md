@@ -290,6 +290,8 @@ sdCuts(EmpRate, 5)
 
 > -0.01024241  0.07671088  0.16366416  0.25061744
 
+test
+
 {% highlight r %}
 # Plot perameters 
 par(mar = c(0.25, 0.25, 2, 0.25))
