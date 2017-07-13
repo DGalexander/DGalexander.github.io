@@ -234,7 +234,11 @@ Lets explore some key variables of population. It shows there are just over 3 mi
 # Let's take a gander at the data :)
 # Polulation
 sum(SAPE2014)
+{% endhighlight %}
 
+> [1] 3125001
+
+{% highlight r %}
 # Working Age Poulation
 sum(WASAPE2014)
 {% endhighlight %}
