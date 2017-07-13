@@ -12,7 +12,7 @@ subtitle: Isochrones -  using Java Script and Leaflet
 
 As yet, only [Route 360](https://www.route360.net/index.html) only accepts points as sources, as ploygons would be useful for large destinations such as National Parks. I plan to overlay the Park Boundary with the road network and create *'intersect points'* to use as a measure of *'travel time to entrance'*.  
 
-Motion Intelligence helps business and public organizations harvest the power of advanced spatial analysis. This can be useful in Spatial Planning and business planning. Below, I have adapated a simple polygon map to with travel time and travel type options using Bakewell Visitor Centre as an example.
+Motion Intelligence helps business and public organizations harvest the power of advanced spatial analysis. This can be useful in Spatial Planning and business planning. Below, I have adapated a simple bash query around using R as a GIS to show travel time to a Landscape Partnerhip area in Scotland. 
 
 <p> 
 <iframe frameborder="0" width="700" height="800" 
