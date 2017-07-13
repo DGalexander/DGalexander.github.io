@@ -252,55 +252,9 @@ A (very!) quick look at the Deciles suggests that there is an even spread of dep
 table(Decile)
 {% endhighlight %}
 
-Decile
-
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">Decile</th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-    <th class="tg-yw4l"></th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">1</td>
-    <td class="tg-yw4l">2</td>
-    <td class="tg-yw4l">3</td>
-    <td class="tg-yw4l">4</td>
-    <td class="tg-yw4l">5</td>
-    <td class="tg-yw4l">6</td>
-    <td class="tg-yw4l">7</td>
-    <td class="tg-yw4l">8</td>
-    <td class="tg-yw4l">9</td>
-    <td class="tg-yw4l">10</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">538</td>
-    <td class="tg-yw4l">470</td>
-    <td class="tg-yw4l">444</td>
-    <td class="tg-yw4l">392</td>
-    <td class="tg-yw4l">364</td>
-    <td class="tg-yw4l">318</td>
-    <td class="tg-yw4l">321</td>
-    <td class="tg-yw4l">370</td>
-    <td class="tg-yw4l">414</td>
-    <td class="tg-yw4l">422</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-</table>
+> Decile
+  1   2   3   4   5   6   7   8   9  10 
+538 470 444 392 364 318 321 370 414 422
 
 Employment Rate
 
@@ -318,78 +272,22 @@ Let's test some mapping!
 quantileCuts(EmpRate, 5)
 {% endhighlight %}
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">20%</th>
-    <th class="tg-yw4l">40%</th>
-    <th class="tg-yw4l">60%</th>
-    <th class="tg-yw4l">80%</th>
-    <th class="tg-yw4l"></th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">0.04</td>
-    <td class="tg-yw4l">0.08</td>
-    <td class="tg-yw4l">0.13</td>
-    <td class="tg-yw4l">0.19</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-</table>
+> 20%  40%  60%  80% 
+0.04 0.08 0.13 0.19
 
 {% highlight r %}
 rangeCuts(EmpRate, 5)
 {% endhighlight %}
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">#1</th>
-    <th class="tg-yw4l">#2</th>
-    <th class="tg-yw4l">#3</th>
-    <th class="tg-yw4l">#4</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">0.104</td>
-    <td class="tg-yw4l">0.208</td>
-    <td class="tg-yw4l">0.312</td>
-    <td class="tg-yw4l">0.416</td>
-  </tr>
-</table>
+> #1    #2    #3    #4 
+0.104 0.208 0.312 0.416
 
 {% highlight r %}
 sdCuts(EmpRate, 5)
 {% endhighlight %}
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-</style>
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">-1.5SD</th>
-    <th class="tg-yw4l">-0.5SD</th>
-    <th class="tg-yw4l">0.5SD</th>
-    <th class="tg-yw4l">1.5SD</th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">-0.01024241</td>
-    <td class="tg-yw4l">0.07671088</td>
-    <td class="tg-yw4l">0.16366416</td>
-    <td class="tg-yw4l">0.25061744</td>
-  </tr>
-</table>
+> -1.5SD      -0.5SD       0.5SD       1.5SD 
+-0.01024241  0.07671088  0.16366416  0.25061744
 
 {% highlight r %}
 # Plot perameters 
