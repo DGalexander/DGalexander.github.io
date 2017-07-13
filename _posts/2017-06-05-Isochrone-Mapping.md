@@ -272,32 +272,23 @@ Let's test some mapping!
 quantileCuts(EmpRate, 5)
 {% endhighlight %}
 
-> 20%  40%  60%  80% 
-> 0.04 0.08 0.13 0.19
+{% highlight r %}
+ 20%  40%  60%  80% 
+0.04 0.08 0.13 0.19 
+{% endhighlight %}
 
 {% highlight r %}
 rangeCuts(EmpRate, 5)
 {% endhighlight %}
 
-> #1    #2    #3    #4 
-> 0.104 0.208 0.312 0.416
+{% highlight r %}
+   #1    #2    #3    #4 
+0.104 0.208 0.312 0.416 
+{% endhighlight %}
 
 {% highlight r %}
 sdCuts(EmpRate, 5)
 {% endhighlight %}
-
-> -1.5SD      -0.5SD       0.5SD       1.5SD 
-
-> -0.01024241  0.07671088  0.16366416  0.25061744
-
-test
-
--1.5SD      -0.5SD       0.5SD       1.5SD 
-
--0.01024241  0.07671088  0.16366416  0.25061744
-
-     -1.5SD      -0.5SD       0.5SD       1.5SD 
--0.01024241  0.07671088  0.16366416  0.25061744 
 
 {% highlight r %}
      -1.5SD      -0.5SD       0.5SD       1.5SD 
