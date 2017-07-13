@@ -1,7 +1,7 @@
 ---
 layout: post
 published: true
-title: Isochrone Webmaps
+title: Isochrone intelligent motion maps using R
 date: '2017-06-05 02:12:00 +0800'
 subtitle: Isochrones - Creating travel times using R and motion mapping
 ---
@@ -332,16 +332,3 @@ title("Quantile Cuts", cex.main = 1)
 {% endhighlight %}
 
 ![7.png]({{site.baseurl}}/img/7.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
