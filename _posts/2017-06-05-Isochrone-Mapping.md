@@ -236,14 +236,18 @@ Lets explore some key variables of population. It shows there are just over 3 mi
 sum(SAPE2014)
 {% endhighlight %}
 
-> [1] 3125001
+{% highlight r %}
+[1] 3125001
+{% endhighlight %}
 
 {% highlight r %}
 # Working Age Poulation
 sum(WASAPE2014)
 {% endhighlight %}
 
-> [1] 2029799
+{% highlight r %}
+[1] 2029799
+{% endhighlight %}
 
 A (very!) quick look at the Deciles suggests that there is an even spread of deprived and non-deprived areas. (1 being most deprived top 10%)
 
@@ -252,9 +256,11 @@ A (very!) quick look at the Deciles suggests that there is an even spread of dep
 table(Decile)
 {% endhighlight %}
 
-> Decile
-> 1   2   3   4   5   6   7   8   9  10
-> 538 470 444 392 364 318 321 370 414 422
+{% highlight r %}
+Decile
+  1   2   3   4   5   6   7   8   9  10 
+538 470 444 392 364 318 321 370 414 422
+{% endhighlight %}
 
 Employment Rate
 
