@@ -131,6 +131,35 @@ latlon <- data.frame(lat=pj$y, lon=pj$x)
 print(latlon)
 {% endhighlight %}
 
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-yw4l{vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">lat</th>
+    <th class="tg-yw4l">long</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">56.21222</td>
+    <td class="tg-yw4l">-4.137809</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">56.29837</td>
+    <td class="tg-yw4l">-4.303078</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">56.22998</td>
+    <td class="tg-yw4l">-4.275506</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">56.21646</td>
+    <td class="tg-yw4l">-4.222594</td>
+  </tr>
+</table>
+
 ## Motion Intelligence
 
 The Route 360Â°-technology by Motion Intelligence provides a simple API for large geographic network analysis, route planning and visualization to power complex geo-applications. The API finds the fastest way between any two locations and shows you how far you can travel in a given time range, so you can quickly make decisions about the accessibility of a location.
