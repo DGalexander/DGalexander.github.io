@@ -243,6 +243,8 @@ sum(SAPE2014)
 sum(WASAPE2014)
 {% endhighlight %}
 
+> [1] 2029799
+
 A (very!) quick look at the Deciles suggests that there is an even spread of deprived and non-deprived areas. (1 being most deprived top 10%)
 
 {% highlight r %}
