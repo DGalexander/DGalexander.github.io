@@ -8,7 +8,7 @@ title: Hours Drive Draft
 Test of hours drive
 
 <p> 
-<iframe frameborder="0" width="740" height="740" 
+<iframe frameborder="0" width="700" height="700" 
         sandbox="allow-same-origin allow-scripts"
         scrolling="no" seamless="seamless"
         src="/files/HoursDriveDeprivation.html">
