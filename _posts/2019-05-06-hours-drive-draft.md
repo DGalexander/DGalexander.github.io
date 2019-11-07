@@ -52,7 +52,7 @@ Plot the output to take a look at the buffer and CLP boundary to make sure that 
 plot(PDNP.buffer, add =T, border = "green")
 {% endhighlight %}
 
-[1.png]({{site.baseurl}}/img/Rplot02.png)
+![1.png]({{site.baseurl}}/img/Rplot02.png)
 
 Load the OS GB Roads data and clip the PDNP Area. This was downloaded from the Ordnance Survey website and is  is subject to the terms at http://os.uk/opendata/licence Contains Ordnance Survey data Â© Crown copyright and database right (2016). 
 
@@ -86,7 +86,7 @@ PDNP.Aroads <- rbind(PDNP.Aroads_SD, PDNP.Aroads_SE, PDNP.Aroads_SJ, PDNP.Aroads
 plot(PDNP.Aroads, add = T)
 {% endhighlight %}
 
-[2.png]({{site.baseurl}}/img/Rplot03.png)
+![2.png]({{site.baseurl}}/img/Rplot03.png)
 
 ## Creating Access Points
 
@@ -130,7 +130,7 @@ plot(Catchment)
 plot(PDNP, add = T, col = "green")
 {% endhighlight %}
 
-[3.png]({{site.baseurl}}/img/Rplot01.png)
+![3.png]({{site.baseurl}}/img/Rplot01.png)
 
 
 
