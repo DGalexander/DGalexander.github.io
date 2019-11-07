@@ -52,11 +52,11 @@ Plot the output to take a look at the buffer and CLP boundary to make sure that 
 plot(PDNP.buffer, add =T, border = "green")
 {% endhighlight %}
 
-#############![1.png]({{site.baseurl}}/img/1.png)
+#############![1.png]({{site.baseurl}}/img/Rplot01.png)
 
-Load the OS GB Roads data and clip the CLA Area. This was downloaded from the Ordnance Survey website and is  is subject to the terms at http://os.uk/opendata/licence Contains Ordnance Survey data Â© Crown copyright and database right (2016). 
+Load the OS GB Roads data and clip the PDNP Area. This was downloaded from the Ordnance Survey website and is  is subject to the terms at http://os.uk/opendata/licence Contains Ordnance Survey data Â© Crown copyright and database right (2016). 
 
-Clip the A roads to the CLP Buffer so we can analyse the intersection points. Here we use A roads as they are the major arterial roads in the area. It is unlikely, a visitor would access the CLP area, by car on any other type of road. 
+Clip the A roads to the PDNP Buffer so we can analyse the intersection points. Here we use A roads as they are the major arterial roads in the area. It is unlikely, a visitor would access the PDNP area, by car on any other type of road. 
 
 {% highlight r %}
 ## Load OS GB Roads Data (NN = 100km)
@@ -104,8 +104,29 @@ plot(xPoints, add = TRUE, col = "red", pch = 20, cex = 3)
 {% endhighlight %}
 
 
+Now we convert these access points from X Y location to Latitude and Longitude; the format used to query Route360 API engine. 
 
+{% highlight r %}
+# Define Spatial reference http://spatialreference.org/ref/epsg/osgb-1936-british-national-grid/proj4/
+library(proj4)
+xPoints <- as.data.frame(xPoints)
+proj4string <- "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs"
+pj <- project(xPoints, proj4string, inverse=TRUE)
+latlon <- data.frame(lat=pj$y, lon=pj$x)
+print(latlon)
+{% endhighlight %}
 
+{% highlight r %}
+# Convert to Spatial Polygons 
+library("geojsonio")
+Catchment <- geojson_read("drive_hour.geojson", method = "local", what = "sp")
+# buffer by an extra 1km (r360 free plan only 200m)
+Catchment <- gBuffer(Catchment, width = 1000)
+# Change the projection
+Catchment <- spTransform(Catchment, proj4string)
+plot(Catchment)
+plot(PDNP, add = T, col = "green")
+{% endhighlight %}
 
 
 
