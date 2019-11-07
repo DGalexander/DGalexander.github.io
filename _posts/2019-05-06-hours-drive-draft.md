@@ -168,6 +168,7 @@ IMD.HoursDrive <- shapefile("IMD.HoursDrive.shp")
 {% endhighlight %}
 
 #### Lets Map ####
+{% highlight r %}
 library(leaflet)
 
 ## Set the data to numeric
@@ -197,13 +198,7 @@ library(htmlwidgets)
 saveWidget(widget = mymap, file = 'HoursDriveDeprivation.html')
 {% endhighlight %}
 
-<p> 
-<iframe frameborder="0" width="700" height="500" 
-        sandbox="allow-same-origin allow-scripts"
-        scrolling="no" seamless="seamless"
-        src="/files/HoursDriveDeprivation.html">
-</iframe>
-</p>
+[Click Here to see Map](https://github.com/DGalexander/Hours_Drive/blob/master/HoursDriveDeprivation.html)
 
 
 
