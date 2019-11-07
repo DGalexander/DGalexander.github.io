@@ -25,3 +25,113 @@ In this example we create a Nominal Catchment. These can be misleading, as they 
 * creating a series of access points (A roads to the CLP area)
 * using motion intelligence to accurately portray drive time
 
+## Data Anlysis
+
+# Find Some intersect points using R
+
+First we set up the R Environment and load the initial packages. Then the redefine PDNP boundary shape-file is added.
+
+{% highlight r %}
+## Set wd
+setwd("~/R Projects/TravelTime")
+## Load packages
+library("GISTools")
+{% endhighlight %}
+
+{% highlight r %}
+## Load CLP Layer .shp
+PDNP <- readShapePoly("~/R Projects/TravelTime/Boundary/PDNP.shp")
+
+## Create a 1km Buffer
+PDNP.buffer <- gBuffer(PDNP, width = 1000)
+{% endhighlight %}
+
+Plot the output to take a look at the buffer and CLP boundary to make sure that it is loaded correctly. 
+
+{% highlight r %}
+plot(PDNP.buffer, add =T, border = "green")
+{% endhighlight %}
+
+#############![1.png]({{site.baseurl}}/img/1.png)
+
+Load the OS GB Roads data and clip the CLA Area. This was downloaded from the Ordnance Survey website and is  is subject to the terms at http://os.uk/opendata/licence Contains Ordnance Survey data Â© Crown copyright and database right (2016). 
+
+Clip the A roads to the CLP Buffer so we can analyse the intersection points. Here we use A roads as they are the major arterial roads in the area. It is unlikely, a visitor would access the CLP area, by car on any other type of road. 
+
+{% highlight r %}
+## Load OS GB Roads Data (NN = 100km)
+## Load OS GB Roads Data (NN = 100km) Clipped and combined the NN for the PDNP)
+roads_SD <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SD_CLIP.shp")
+roads_SE <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SE_CLIP.shp")
+roads_SJ <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SJ_CLIP.shp")
+roads_SK <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SK_CLIP.shp")
+#### Repeat Steps for each OS GB Roads Layer ####
+## Logical = A Roads
+roads.ARoads <- (roads$class == "A Road")
+## Subset the SLDF A roads
+roads.ARoads <- roads[roads.ARoads,]
+## Spatial Clip to CLP Buffer
+CLP.Aroads <- gIntersection(CLP.buffer, roads.ARoads, byid = TRUE)
+## Remove the roads data as it is >30mb ;)
+rm(roads_SD, roads_SE, roads_SJ, roads_SK)
+
+{% endhighlight %}
+
+Plot the clipped roads data to make sure that it is in the same projection. 
+
+{% highlight r %}
+## Merge Data
+PDNP.Aroads <- rbind(PDNP.Aroads_SD, PDNP.Aroads_SE, PDNP.Aroads_SJ, PDNP.Aroads_SK)
+# Take a look
+plot(PDNP.Aroads, add = T)
+{% endhighlight %}
+
+## Creating Access Points
+
+Where the A roads intersect the PDNP we will use these as theoretical access points to the PDNP area. As mentioned above, this is the logical transport routing for 'non-immediate locals' who we would expect to follow this network. 
+
+{% highlight r %}
+## Find Points where A roads intersect the PDNP Boundary
+library(maptools)
+library(spatstat)
+PDNP.Poly <- as(PDNP, "owin")
+PDNP.Aroads.Line <- as(PDNP.Aroads, "psp")
+PDNP.Poly.edges <- edges(PDNP.Poly)
+xPoints <- crossing.psp(PDNP.Aroads.Line, PDNP.Poly.edges)
+xPoints <- xPoints[c(1:58)]
+##Plot the access points to view their locations on a map.
+plot(xPoints, add = TRUE, col = "red", pch = 20, cex = 3)
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
