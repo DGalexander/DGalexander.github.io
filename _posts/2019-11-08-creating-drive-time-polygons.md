@@ -5,7 +5,6 @@ title: Creating Drive Time Polygons
 date: '2019-11-08 02:18:00 +0800'
 subtitle: Drive time analysis from the Peak District National Park Boundary
 ---
-## How many people live within 1 hours drive of the Peak District? 
 Motion Intelligence helps business and public organizations harvest the power of advanced spatial analysis. This can be useful in Spatial business planning. 
 
 As yet, [Targomo](https://www.targomo.com/) and [Network Analysis in ESRI](https://doc.arcgis.com/en/arcgis-online/analyze/create-drive-time-areas.htm) only accepts points as sources. Ploygons would be useful for large destinations such as National Parks where entry and exit points to the Park are less well defined. 
