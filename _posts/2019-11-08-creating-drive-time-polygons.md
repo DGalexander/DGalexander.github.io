@@ -199,5 +199,13 @@ saveWidget(widget = mymap, file = 'HoursDriveDeprivation.html')
 
 Maps :-)
 
+<p> 
+<iframe frameborder="0" width="700" height="500" 
+        sandbox="allow-same-origin allow-scripts"
+        scrolling="no" seamless="seamless"
+        src="/files/HoursDriveDeprivation.html">
+</iframe>
+</p>
+
 
 [Click Here to see Map](https://github.com/DGalexander/DGalexander.github.io/blob/master/files/HoursDriveDeprivation.html)
