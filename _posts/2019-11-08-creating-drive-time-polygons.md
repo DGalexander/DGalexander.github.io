@@ -58,7 +58,6 @@ Clip the A roads to the PDNP Buffer so we can analyse the intersection points. H
 
 {% highlight r %}
 ## Load OS GB Roads Data (NN = 100km)
-## Load OS GB Roads Data (NN = 100km) Clipped and combined the NN for the PDNP)
 roads_SD <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SD_CLIP.shp")
 roads_SE <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SE_CLIP.shp")
 roads_SJ <- readShapeLines("~/R Projects/TravelTime/oproad_essh_gb/SJ_CLIP.shp")
