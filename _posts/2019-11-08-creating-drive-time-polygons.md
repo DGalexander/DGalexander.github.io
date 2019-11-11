@@ -200,5 +200,4 @@ saveWidget(widget = mymap, file = 'HoursDriveDeprivation.html')
 Maps :-)
 
 
-[Click Here to see Map](https://www.dropbox.com/s/p7r1dbhrlisdexb/HoursDriveDeprivation.html?dl=0)
-
+[Click Here to see Map](https://github.com/DGalexander/DGalexander.github.io/blob/master/files/HoursDriveDeprivation.html)
