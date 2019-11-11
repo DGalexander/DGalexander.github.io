@@ -23,9 +23,9 @@ Further analysis
 * Scrape the data (where available) from data.gov.uk
 * Subset the data based on the hours drive time catchment
 
-## Data Anlysis
+# Data Anlysis
 
-# Find Some intersect points using R
+## Find Some intersect points using R
 
 First we set up the R Environment and load the initial packages. Then the redefine PDNP boundary shape-file is added.
 
@@ -80,7 +80,7 @@ Plot the clipped roads data to make sure that it is in the same projection.
 {% highlight r %}
 ## Merge Data
 PDNP.Aroads <- rbind(PDNP.Aroads_SD, PDNP.Aroads_SE, PDNP.Aroads_SJ, PDNP.Aroads_SK)
-# Take a look
+## Take a look
 plot(PDNP.Aroads, add = T)
 {% endhighlight %}
 
@@ -108,7 +108,7 @@ plot(xPoints, add = TRUE, col = "red", pch = 20, cex = 3)
 Now we convert these access points from X Y location to Latitude and Longitude; the format used to query Route360 API engine. 
 
 {% highlight r %}
-# Define Spatial reference http://spatialreference.org/ref/epsg/osgb-1936-british-national-grid/proj4/
+## Define Spatial reference http://spatialreference.org/ref/epsg/osgb-1936-british-national-grid/proj4/
 library(proj4)
 xPoints <- as.data.frame(xPoints)
 proj4string <- "+proj=tmerc +lat_0=49 +lon_0=-2 +k=0.9996012717 +x_0=400000 +y_0=-100000 +ellps=airy +datum=OSGB36 +units=m +no_defs"
@@ -134,12 +134,12 @@ curl --compressed -H 'Content-Type: application/json' --data '{"sources":[{"lat"
 Now the .geoJSON is downloaded we can import to Spatial Polygons for manipulation. We add a buffer of 1km as the API access level only buffers to 200m. We plot the catchment boundary. 
 
 {% highlight r %}
-# Convert to Spatial Polygons 
+## Convert to Spatial Polygons 
 library("geojsonio")
 Catchment <- geojson_read("drive_hour.geojson", method = "local", what = "sp")
-# buffer by an extra 1km (r360 free plan only 200m)
+## buffer by an extra 1km (r360 free plan only 200m)
 Catchment <- gBuffer(Catchment, width = 1000)
-# Change the projection
+## Change the projection
 Catchment <- spTransform(Catchment, proj4string)
 {% endhighlight %}
 
@@ -169,7 +169,7 @@ IMD.HoursDrive <- shapefile("IMD.HoursDrive.shp")
 {% highlight r %}
 library(leaflet)
 
-# Simplify - too big for hosting
+## Simplify - too big for hosting
 library(rmapshaper)
 IMD.HoursDrive <- ms_simplify(IMD.HoursDrive, keep = 0.025)
 
